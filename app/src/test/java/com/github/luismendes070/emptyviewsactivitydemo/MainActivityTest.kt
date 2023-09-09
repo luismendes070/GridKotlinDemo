@@ -1,7 +1,5 @@
 package com.github.luismendes070.emptyviewsactivitydemo
 
-package com.github.luismendes070.emptyviewsactivitydemo
-
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import androidx.test.ext.junit.rules.ActivityScenarioRule
 import org.junit.Rule
