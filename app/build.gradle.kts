@@ -11,8 +11,8 @@ android {
         applicationId = "com.github.luismendes070.emptyviewsactivitydemo"
         minSdk = 24
         targetSdk = 33
-        versionCode = 3
-        versionName = "1.2"
+        versionCode = 4
+        versionName = "1.3"
 
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
     }
@@ -42,7 +42,17 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("androidx.test.ext:junit-ktx:1.1.5")
+
+    // BingChat ui tests
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.1")
     testImplementation("junit:junit:4.13.2")
+
+    // Import the Compose BOM
+    implementation (platform("androidx.compose:compose-bom:2023.06.01"))
+    implementation("androidx.compose.material3:material3")
+    implementation("androidx.compose.ui:ui")
+    implementation("androidx.compose.ui:ui-graphics")
+    implementation("androidx.compose.ui:ui-tooling-preview")
 
     // ChatGPT ui tests
     androidTestImplementation("androidx.test.ext:junit-ktx:1.1.3")
